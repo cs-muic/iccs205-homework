@@ -1,0 +1,24 @@
+Dataset:  ship_speed_fuel.csv
+
+Source: S.Wang, Q. Meng (2012). "Sailing Speed Optimization for Container
+Ships in a Liner Shipping Network," Transportation Research Part E, Vol. 48,
+pp. 701-714
+
+Description:
+Measurements of average speed (knots) and fuel consumption (tons/day) 
+for 5 ship-type
+and voyage leg combinations. 20 runs for each combination.
+Ship Type/Voyage leg:   (TEU = 20-foot equivalent unit)
+1: 3000-TEU   Singapore-Jakarta
+2: 3000-TEU   Singapore-Kaohsiung
+3: 5000-TEU   Hong Kong-Singapore
+4: 8000-TEU   Yantian-Los Angeles
+5: 8000-TEU   Tokyo-Xiamen
+Authors Fit Power Model:  Fuel = a(speed^b)   
+or equivalently:        ln(Fuel) = ln(a) + b(ln(speed))
+Polynomial fits well too.
+
+Variable Names
+ship_leg    (1-5)
+speed   (knots)
+fuel    (tons/day)
